@@ -9,7 +9,7 @@ namespace Application.Interfaces
 {
     public interface IRunningActivityService
     {
-        Task<IEnumerable<RunningActivity>> GetRunningActivitiesAsync();
+        Task<IList<RunningActivity>> GetRunningActivitiesAsync();
         Task<RunningActivity> GetRunningActivityByIdAsync(int id);
         Task<RunningActivity> CreateRunningActivityAsync(RunningActivity runningActivity);
         Task<RunningActivity> UpdateRunningActivityAsync(RunningActivity runningActivity);
